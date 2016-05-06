@@ -15,6 +15,10 @@
 		9CBB50EF96AC160FE5E427EA65DCD178 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8809415C7A30E0237CF918D2BC4A340 /* ReplaceMe.swift */; };
 		CAD48296B33306D3BF4A695907A4BAA4 /* Pods-JHUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F5C74A35761ADC1E27AA48F27BCF2A /* Pods-JHUIKit_Tests-dummy.m */; };
 		E6763E79EC977D067874671B473CE966 /* JHUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B041104E55E847B58E6D589D7AACC38F /* JHUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E89797281CDC4637008D8547 /* JHSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89797271CDC4637008D8547 /* JHSwipeView.swift */; };
+		E897972A1CDC4671008D8547 /* RuntimeConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89797291CDC4671008D8547 /* RuntimeConstants.swift */; };
+		E897972C1CDC467C008D8547 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897972B1CDC467C008D8547 /* Constants.swift */; };
+		E897972E1CDC46A5008D8547 /* JHSwipeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897972D1CDC46A5008D8547 /* JHSwipeViewDelegate.swift */; };
 		E8ED5FA51CDC244200FF9C3D /* JHCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED5FA41CDC244200FF9C3D /* JHCircleImageView.swift */; };
 		F4B0339D49955F2E830D555C9AC839DF /* Pods-JHUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B91B48E50F1CC3BA098E823B79110154 /* Pods-JHUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4D6B958D338793408D99588637276F6 /* Pods-JHUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F26EBC034FD8867E52480D4B06B61625 /* Pods-JHUIKit_Example-dummy.m */; };
@@ -66,6 +70,10 @@
 		D4DFDFE5972AFC0C1B17F485F7588F54 /* Pods-JHUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JHUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		D8809415C7A30E0237CF918D2BC4A340 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		E0FDB8B6FEACF96B32CA2449FA6B3D0F /* JHUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JHUIKit.modulemap; sourceTree = "<group>"; };
+		E89797271CDC4637008D8547 /* JHSwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHSwipeView.swift; sourceTree = "<group>"; };
+		E89797291CDC4671008D8547 /* RuntimeConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeConstants.swift; sourceTree = "<group>"; };
+		E897972B1CDC467C008D8547 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E897972D1CDC46A5008D8547 /* JHSwipeViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHSwipeViewDelegate.swift; sourceTree = "<group>"; };
 		E8ED5FA41CDC244200FF9C3D /* JHCircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHCircleImageView.swift; sourceTree = "<group>"; };
 		F101C863E2AC0C12279D0771B10AC2B3 /* Pods_JHUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26EBC034FD8867E52480D4B06B61625 /* Pods-JHUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JHUIKit_Example-dummy.m"; sourceTree = "<group>"; };
@@ -176,6 +184,10 @@
 			children = (
 				D8809415C7A30E0237CF918D2BC4A340 /* ReplaceMe.swift */,
 				E8ED5FA41CDC244200FF9C3D /* JHCircleImageView.swift */,
+				E89797271CDC4637008D8547 /* JHSwipeView.swift */,
+				E89797291CDC4671008D8547 /* RuntimeConstants.swift */,
+				E897972B1CDC467C008D8547 /* Constants.swift */,
+				E897972D1CDC46A5008D8547 /* JHSwipeViewDelegate.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -365,8 +377,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8ED5FA51CDC244200FF9C3D /* JHCircleImageView.swift in Sources */,
+				E897972A1CDC4671008D8547 /* RuntimeConstants.swift in Sources */,
+				E89797281CDC4637008D8547 /* JHSwipeView.swift in Sources */,
+				E897972E1CDC46A5008D8547 /* JHSwipeViewDelegate.swift in Sources */,
 				6446FFA175D29E90D66C278B13FEA164 /* JHUIKit-dummy.m in Sources */,
 				9CBB50EF96AC160FE5E427EA65DCD178 /* ReplaceMe.swift in Sources */,
+				E897972C1CDC467C008D8547 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

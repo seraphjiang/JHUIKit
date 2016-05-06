@@ -7,18 +7,20 @@
 //
 
 import UIKit
+import JHUIKit
 
 class ViewController: UIViewController {
-
+    let runtimeConstants = RuntimeConstants()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let superView = UIView(frame: CGRectMake(runtimeConstants.CardMarginWidth, self.runtimeConstants.CardTop, self.runtimeConstants.CardWidth, runtimeConstants.AdaptiveCardHeight))
+        
+        let cardView = JHSwipeView(frame: superView.bounds)
+        
+        superView.addSubview(cardView)
+        self.view.addSubview(superView);
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 }
 
