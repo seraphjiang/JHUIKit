@@ -26,7 +26,7 @@ public class JHProfileHeaderView: UIView {
     {
         if (blurBackground != nil) {
             if let i = image {
-                self.blurBackground.image = image
+                self.blurBackground.image = i
                 let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light)) as UIVisualEffectView
                 visualEffectView.frame = blurBackground.bounds
                 blurBackground.addSubview(visualEffectView)
@@ -35,7 +35,7 @@ public class JHProfileHeaderView: UIView {
         
         if (avatar != nil) {
             if let i = image {
-                self.avatar.image = image
+                self.avatar.image = i
             }
         }
     }
