@@ -10,6 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+XCode
 
 ## Installation
 
@@ -27,5 +28,6 @@ jianghuan, seraphjiang@gmail.com
 ## License
 
 JHUIKit is available under the MIT license. See the LICENSE file for more info.
-=======
-UIKit
+
+* JHCircleImageView, show image view with a circle mask. widely used to render avatar of user.
+* JHSwipeView, base view to support tinder style swipe-able(left/right) card style view.
