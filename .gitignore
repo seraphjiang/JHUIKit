@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-# OS X
-.DS_Store
-
-# Xcode
-build/
-=======
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -14,7 +7,6 @@ build/
 DerivedData
 
 ## Various settings
->>>>>>> beb6e0bb1e70d2073cfd0970499b4546826c120a
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -24,27 +16,6 @@ DerivedData
 *.perspectivev3
 !default.perspectivev3
 xcuserdata
-<<<<<<< HEAD
-*.xccheckout
-profile
-*.moved-aside
-DerivedData
-*.hmap
-*.ipa
-
-# Bundler
-.bundle
-
-Carthage
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control
-# 
-# Note: if you ignore the Pods directory, make sure to uncomment
-# `pod install` in .travis.yml
-#
-# Pods/
-=======
 
 ## Other
 *.xccheckout
@@ -72,7 +43,7 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+Pods/
 
 # Carthage
 #
@@ -90,4 +61,3 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/screenshots
->>>>>>> beb6e0bb1e70d2073cfd0970499b4546826c120a
