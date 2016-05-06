@@ -14,6 +14,10 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		E89797371CDD39CC008D8547 /* JHCircleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89797361CDD39CC008D8547 /* JHCircleImageViewController.swift */; };
+		E89797391CDD3A1A008D8547 /* JHSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89797381CDD3A1A008D8547 /* JHSwipeViewController.swift */; };
+		E897973B1CDD3A5D008D8547 /* JHProfileHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897973A1CDD3A5D008D8547 /* JHProfileHeaderViewController.swift */; };
+		E897973D1CDD3A67008D8547 /* JHProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897973C1CDD3A67008D8547 /* JHProfileViewController.swift */; };
 		FF9077EDC9B142F169B9111B /* Pods_JHUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EFC2D9C52062406C54BF89 /* Pods_JHUIKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,6 +50,10 @@
 		AC95BA7B76A3BCDDAE8DC8E5 /* JHUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = JHUIKit.podspec; path = ../JHUIKit.podspec; sourceTree = "<group>"; };
 		B080AF1860377E6D4F7EE422 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C6926451CEE48B0CC1EDD6BE /* Pods-JHUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JHUIKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JHUIKit_Tests/Pods-JHUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		E89797361CDD39CC008D8547 /* JHCircleImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHCircleImageViewController.swift; sourceTree = "<group>"; };
+		E89797381CDD3A1A008D8547 /* JHSwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHSwipeViewController.swift; sourceTree = "<group>"; };
+		E897973A1CDD3A5D008D8547 /* JHProfileHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProfileHeaderViewController.swift; sourceTree = "<group>"; };
+		E897973C1CDD3A67008D8547 /* JHProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProfileViewController.swift; sourceTree = "<group>"; };
 		FA931955D5419DF6AF83D6D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +121,7 @@
 		607FACD21AFB9204008FA782 /* Example for JHUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				E89797351CDD39AE008D8547 /* ViewControllers */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -157,6 +166,17 @@
 				B080AF1860377E6D4F7EE422 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		E89797351CDD39AE008D8547 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E89797361CDD39CC008D8547 /* JHCircleImageViewController.swift */,
+				E89797381CDD3A1A008D8547 /* JHSwipeViewController.swift */,
+				E897973A1CDD3A5D008D8547 /* JHProfileHeaderViewController.swift */,
+				E897973C1CDD3A67008D8547 /* JHProfileViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -359,8 +379,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E897973D1CDD3A67008D8547 /* JHProfileViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				E89797371CDD39CC008D8547 /* JHCircleImageViewController.swift in Sources */,
+				E89797391CDD3A1A008D8547 /* JHSwipeViewController.swift in Sources */,
+				E897973B1CDD3A5D008D8547 /* JHProfileHeaderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

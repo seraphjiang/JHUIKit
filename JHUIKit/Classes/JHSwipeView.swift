@@ -27,8 +27,6 @@ public class JHSwipeView: UIView {
     {
         super.init(frame: frame)
         self.initView()
-        
-        self.applyBorder();
     }
     
     required public init?(coder aDecoder: NSCoder) {
@@ -45,7 +43,7 @@ public class JHSwipeView: UIView {
         lastLocation = self.center
     }
     
-    func applyBorder()
+    public func applyBorder()
     {
         // set Border outside
         let borderWidth = 0.5;
@@ -55,7 +53,7 @@ public class JHSwipeView: UIView {
         borderView.layer.cornerRadius = 12; // if you like rounded corners
         borderView.layer.borderColor = UIColor.lightGrayColor().CGColor
         borderView.layer.borderWidth = CGFloat(borderWidth)
-        // borderView.layer.masksToBounds = false;
+//        borderView.layer.masksToBounds = true;
         self.addSubview(borderView)
         self.bringSubviewToFront(borderView)
     }
