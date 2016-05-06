@@ -11,7 +11,7 @@ import UIKit
 public class JHSwipeView: UIView {
     
     // weak to prevent retain cycles
-    //    var personCardDelegate: PersonCardDelegate?
+    var swipeViewDelegate: JHSwipeViewDelegate?
     
     var lastLocation:CGPoint = CGPointMake(0, 0)
     var lastOriginLocation:CGPoint = CGPointMake(0, 0)
@@ -60,21 +60,12 @@ public class JHSwipeView: UIView {
         self.bringSubviewToFront(borderView)
     }
     
-    //    override public func touchesBegan(touches: NSSet, withEvent event: UIEvent) {
-    //        // Promote the touched view
-    //        self.superview?.bringSubviewToFront(self)
-    //        lastLocation = self.center
-    //    }
-    
     public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let touch = touches.first! as UITouch
         
         // todo todo todo
         self.lastOriginLocation = touch.previousLocationInView(self.superview)
     }
-    //    override public func touchesMoved(touches: NSSet, withEvent event: UIEvent) {
-    //        self.lastOriginLocation = (touches.anyObject()?.previousLocationInView(self.superview))!
-    //    }
     
     func initView() {
         self.applyGesture()
@@ -108,7 +99,6 @@ public class JHSwipeView: UIView {
         // arctan
         let rotationRadians = atan2(tanY,tanX)
         self.layer.transform = RotationTransform(rotationRadians, offset: 20.0)
-        //        self.superview?.layer.transform = RotationTransform(rotationRadians, offset: 20.0)
         
         var alpha = abs(tanY/tanX) * 3 + 0.2
         alpha = alpha < 1 ? alpha : 1
@@ -140,7 +130,6 @@ public class JHSwipeView: UIView {
                             isSwiped = true
                             NSLog("loc left than prev, Swipe to left for dislike")
                             v.frame.origin.x = -1 * (self.screenSize.width + 150)
-                            //                            v.superview!.frame.origin.x = -1 * (self.screenSize.width + 150)
                             self.checkImageView?.alpha = 1
                         }
                         else if(translation.x > 0)
@@ -148,7 +137,6 @@ public class JHSwipeView: UIView {
                             isSwiped = true
                             NSLog("loc right than prev, Swipe to right for like")
                             v.frame.origin.x = CGFloat(self.screenSize.width + 150)
-                            //                            v.superview!.frame.origin.x = CGFloat(self.screenSize.width + 150)
                             self.closeImageView?.alpha = 1
                             isSwipelike = true
                         }
@@ -162,7 +150,7 @@ public class JHSwipeView: UIView {
                         // don't move self.delegate code to above animation enclosure, otherwise card will be removed before animation finished
                         if(isSwiped)
                         {
-                            //                            self.personCardDelegate?.cardSwiped(true, viewSwiped: self)
+                            self.swipeViewDelegate?.cardSwiped(true, viewSwiped: self)
                         }
                         NSNotificationCenter.defaultCenter().postNotificationName(Constants.CardSwipedNotification, object: nil, userInfo: ["swipe_action": isSwipelike ? "like" : "dislike"] as NSDictionary as [NSObject : AnyObject])
                         
