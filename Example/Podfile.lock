@@ -1,0 +1,14 @@
+PODS:
+  - JHUIKit (0.1.0)
+
+DEPENDENCIES:
+  - JHUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  JHUIKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JHUIKit: 14fca7bb7e8fb5ae3aaabca116fafe53a580dabe
+
+COCOAPODS: 0.39.0

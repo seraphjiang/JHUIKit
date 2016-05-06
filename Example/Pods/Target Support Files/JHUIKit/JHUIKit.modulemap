@@ -1,0 +1,6 @@
+framework module JHUIKit {
+  umbrella header "JHUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
