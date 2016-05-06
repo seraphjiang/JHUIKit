@@ -1,5 +1,4 @@
 # JHUIKit
-<<<<<<< HEAD
 
 [![CI Status](http://img.shields.io/travis/jianghuan/JHUIKit.svg?style=flat)](https://travis-ci.org/jianghuan/JHUIKit)
 [![Version](https://img.shields.io/cocoapods/v/JHUIKit.svg?style=flat)](http://cocoapods.org/pods/JHUIKit)
@@ -30,4 +29,3 @@ jianghuan, seraphjiang@gmail.com
 JHUIKit is available under the MIT license. See the LICENSE file for more info.
 =======
 UIKit
->>>>>>> beb6e0bb1e70d2073cfd0970499b4546826c120a

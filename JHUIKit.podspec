@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JHUIKit"
-  s.version          = "0.1.0"
+  s.version          = "0.0.1"
   s.summary          = "A short description of JHUIKit."
 
 # This description is used to generate tags and improve search results.
@@ -21,12 +21,12 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JHUIKit"
+  s.homepage         = "https://github.com/seraphjiang/JHUIKit"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "jianghuan" => "seraphjiang@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JHUIKit.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/seraphjiang/JHUIKit.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/seraphjiang'
 
   s.ios.deployment_target = '8.0'
 
