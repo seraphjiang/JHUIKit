@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "JHUIKit"
   s.version          = "0.0.1"
-  s.summary          = "A short description of JHUIKit."
+  s.summary          = "A UIKit Library with lots of customized View."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: A UIKit Library with lots of customized View.
+ - JHCircleImageView
                        DESC
 
   s.homepage         = "https://github.com/seraphjiang/JHUIKit"
