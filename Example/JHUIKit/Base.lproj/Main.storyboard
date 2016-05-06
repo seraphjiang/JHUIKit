@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,15 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYc-yU-QAM" customClass="JHCircleImageView" customModule="JHUIKit">
-                                <rect key="frame" x="20" y="20" width="335" height="288"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYc-yU-QAM" customClass="JHCircleImageView" customModule="JHUIKit">
+                                <rect key="frame" x="20" y="20" width="121" height="131"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="mask"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wot-7S-1eb" customClass="JHProfileHeaderView" customModule="JHUIKit">
+                                <rect key="frame" x="38" y="197" width="298" height="185"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="mask"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wot-7S-1eb" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="0B7-JQ-Vj3"/>
+                            <constraint firstItem="fYc-yU-QAM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="IJ1-rO-iji"/>
+                            <constraint firstItem="wot-7S-1eb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="197" id="Tdc-2b-qPV"/>
+                            <constraint firstAttribute="trailing" secondItem="fYc-yU-QAM" secondAttribute="trailing" constant="234" id="Wj2-XX-GQ7"/>
+                            <constraint firstItem="wot-7S-1eb" firstAttribute="top" secondItem="fYc-yU-QAM" secondAttribute="bottom" constant="46" id="ZLP-D5-bFC"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="wot-7S-1eb" secondAttribute="bottom" constant="285" id="aA9-Ip-xsr"/>
+                            <constraint firstItem="fYc-yU-QAM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="4" id="kaY-yh-0lw"/>
+                            <constraint firstItem="wot-7S-1eb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="22" id="oTw-ZU-VKE"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>

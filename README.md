@@ -21,6 +21,27 @@ it, simply add the following line to your Podfile:
 pod "JHUIKit"
 ```
 
+```Swift
+// How to use JHSwipeView
+import UIKit
+import JHUIKit
+
+class ViewController: UIViewController {
+let runtimeConstants = RuntimeConstants()
+
+override func viewDidLoad() {
+super.viewDidLoad()
+
+let superView = UIView(frame: CGRectMake(runtimeConstants.CardMarginWidth, self.runtimeConstants.CardTop, self.runtimeConstants.CardWidth, runtimeConstants.AdaptiveCardHeight))
+
+let cardView = JHSwipeView(frame: superView.bounds)
+
+superView.addSubview(cardView)
+self.view.addSubview(superView);
+}
+}
+```
+
 ## Author
 
 jianghuan, seraphjiang@gmail.com

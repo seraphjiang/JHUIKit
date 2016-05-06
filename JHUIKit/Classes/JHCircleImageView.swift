@@ -12,7 +12,6 @@ import QuartzCore
 @IBDesignable
 public class JHCircleImageView: UIView {
     let lineWidth = 10.0
-    var imageView: UIImageView!
     var imageLayer: CALayer!
     
     @IBInspectable var image: UIImage! {

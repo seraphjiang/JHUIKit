@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JHUIKit"
-  s.version          = "0.0.5"
+  s.version          = "0.0.6"
   s.summary          = "A UIKit Library with lots of customized View."
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: A UIKit Library with lots of customized View.
+A UIKit Library with lots of customized View.
 - JHCircleImageView
 - JHSwipeView
                        DESC
