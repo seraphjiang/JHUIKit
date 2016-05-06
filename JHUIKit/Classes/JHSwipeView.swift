@@ -67,7 +67,7 @@ public class JHSwipeView: UIView {
     //    }
     
     public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        var touch = touches.first! as UITouch
+        let touch = touches.first! as UITouch
         
         // todo todo todo
         self.lastOriginLocation = touch.previousLocationInView(self.superview)
@@ -84,7 +84,7 @@ public class JHSwipeView: UIView {
     
     func applyGesture()
     {
-        let panRecognizer = UIPanGestureRecognizer(target:self, action:"handlePan:")
+        let panRecognizer = UIPanGestureRecognizer(target:self, action:#selector(JHSwipeView.handlePan(_:)))
         self.userInteractionEnabled = true
         self.multipleTouchEnabled = true
         self.addGestureRecognizer(panRecognizer)
@@ -94,8 +94,8 @@ public class JHSwipeView: UIView {
         let v = recognizer.view!;
         let translation  = recognizer.translationInView(self.superview!)
         let loc = recognizer.locationInView(self.superview)
-        let x = abs(Int(Float(loc.x)))
-        let prevx = Int(Float(lastOriginLocation.x))
+        _ = abs(Int(Float(loc.x)))
+        _ = Int(Float(lastOriginLocation.x))
         
         self.center = CGPointMake(lastLocation.x + translation.x, lastLocation.y + translation.y)
         //        self.superview?.center = CGPointMake(lastLocation.x + translation.x, lastLocation.y + translation.y)
@@ -125,7 +125,7 @@ public class JHSwipeView: UIView {
         }
         var isSwiped = false
         var isSwipelike = false
-        var middle = Int(self.screenSize.width/2)
+        _ = Int(self.screenSize.width/2)
         
         if(recognizer.state == UIGestureRecognizerState.Ended)
         {
@@ -205,7 +205,7 @@ public class JHSwipeView: UIView {
     }
     
     func RotationTransform(rotationRadians: Double, offset: Double) -> CATransform3D {
-        let offset = CGPointMake(CGFloat(-1 * offset), CGFloat(-1 * offset))
+        _ = CGPointMake(CGFloat(-1 * offset), CGFloat(-1 * offset))
         var startTransform = CATransform3DIdentity
         startTransform = CATransform3DRotate(CATransform3DIdentity,
                                              CGFloat(rotationRadians), 0.0, 0.0, 1.0)
