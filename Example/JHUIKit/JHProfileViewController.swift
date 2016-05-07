@@ -22,7 +22,7 @@ class JHProfileViewController: UIViewController, JHSwipeViewDelegate {
     func addPersonCard()
     {
         let superView = UIView(frame: CGRectMake(runtimeConstants.CardMarginWidth, self.runtimeConstants.CardTop, self.runtimeConstants.CardWidth, runtimeConstants.AdaptiveCardHeight))
-        personView = JHProfileCardView(frame: superView.bounds, image: UIImage(named: "mask")!)
+        personView = JHProfileCardView(frame: superView.bounds, image: UIImage(named: "mask")!, radius: 200)
         personView!.swipeViewDelegate = self
         superView.addSubview(personView!)
         self.view.addSubview(superView);

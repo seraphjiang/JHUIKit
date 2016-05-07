@@ -12,7 +12,6 @@
 		6446FFA175D29E90D66C278B13FEA164 /* JHUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 37F2392EC4F65FC6E6687F0CAF294E88 /* JHUIKit-dummy.m */; };
 		66F6A5F580A0860CFF2C272A0DEDD478 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		7A6094EAC7FC3D9EC0D65029C77DC5E7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		9CBB50EF96AC160FE5E427EA65DCD178 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8809415C7A30E0237CF918D2BC4A340 /* ReplaceMe.swift */; };
 		CAD48296B33306D3BF4A695907A4BAA4 /* Pods-JHUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F5C74A35761ADC1E27AA48F27BCF2A /* Pods-JHUIKit_Tests-dummy.m */; };
 		E6763E79EC977D067874671B473CE966 /* JHUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B041104E55E847B58E6D589D7AACC38F /* JHUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E89797281CDC4637008D8547 /* JHSwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89797271CDC4637008D8547 /* JHSwipeView.swift */; };
@@ -70,7 +69,6 @@
 		CDB373F9E72B250A0F9AEBEB418BBDE7 /* Pods-JHUIKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JHUIKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		CF27AC8D0CB8D407181540FDE045852F /* Pods-JHUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JHUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4DFDFE5972AFC0C1B17F485F7588F54 /* Pods-JHUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JHUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		D8809415C7A30E0237CF918D2BC4A340 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		E0FDB8B6FEACF96B32CA2449FA6B3D0F /* JHUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JHUIKit.modulemap; sourceTree = "<group>"; };
 		E89797271CDC4637008D8547 /* JHSwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHSwipeView.swift; sourceTree = "<group>"; };
 		E89797291CDC4671008D8547 /* RuntimeConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RuntimeConstants.swift; sourceTree = "<group>"; };
@@ -186,7 +184,6 @@
 		A3F4660851B685EB7D525A80464A0905 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D8809415C7A30E0237CF918D2BC4A340 /* ReplaceMe.swift */,
 				E8ED5FA41CDC244200FF9C3D /* JHCircleImageView.swift */,
 				E89797271CDC4637008D8547 /* JHSwipeView.swift */,
 				E89797291CDC4671008D8547 /* RuntimeConstants.swift */,
@@ -389,7 +386,6 @@
 				E89797321CDC7FDE008D8547 /* JHProfileHeaderView.swift in Sources */,
 				E897972E1CDC46A5008D8547 /* JHSwipeViewDelegate.swift in Sources */,
 				6446FFA175D29E90D66C278B13FEA164 /* JHUIKit-dummy.m in Sources */,
-				9CBB50EF96AC160FE5E427EA65DCD178 /* ReplaceMe.swift in Sources */,
 				E897972C1CDC467C008D8547 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -24,9 +24,10 @@ public class JHProfileCardView: JHSwipeView {
         super.init(coder: aDecoder)
     }
     
-    public init(frame: CGRect, image:UIImage)
+    public init(frame: CGRect, image:UIImage, radius: CGFloat)
     {
         super.init(frame: frame)
+        self.radius = radius
         self.image = image
         self.initViews()
     }
@@ -40,7 +41,8 @@ public class JHProfileCardView: JHSwipeView {
     
     func addAllSubviews()
     {
-        let cardView = JHProfileHeaderView(frame: CGRectMake(1,1, self.frame.width-2, self.frame.width * 3 / 4 - 2))
+        let cardView = JHProfileHeaderView(frame: CGRectMake(1,1, self.frame.width-2, self.frame.width * 3 / 4 - 2), radius: self.radius)
+        
         cardView.image = image
         addSubview(cardView)
     }

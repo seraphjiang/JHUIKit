@@ -13,12 +13,21 @@ public class JHProfileHeaderView: UIView {
     var blurBackground: UIImageView!
     var avatar:JHCircleImageView!
     var imageLayer: CALayer!
-
-    @IBInspectable var image: UIImage! {
+    
+    public init(frame: CGRect, radius: CGFloat) {
+        self.radius = radius
+        super.init(frame:frame)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    @IBInspectable public var image: UIImage! {
         didSet { updateLayerProperties() }
     }
     
-    @IBInspectable var radius: CGFloat = 100 {
+    @IBInspectable public var radius: CGFloat = 100 {
         didSet { updateLayerProperties() }
     }
     
