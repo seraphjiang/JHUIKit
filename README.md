@@ -21,24 +21,38 @@ it, simply add the following line to your Podfile:
 pod "JHUIKit"
 ```
 
-```Swift
-// How to use JHSwipeView
+## HowTO
+* How to use JHSwipeView
+
+```Swift 
 import UIKit
 import JHUIKit
 
 class ViewController: UIViewController {
-let runtimeConstants = RuntimeConstants()
+    let runtimeConstants = RuntimeConstants()
 
-override func viewDidLoad() {
-super.viewDidLoad()
+    override func viewDidLoad() {
+        super.viewDidLoad()
 
-let superView = UIView(frame: CGRectMake(runtimeConstants.CardMarginWidth, self.runtimeConstants.CardTop, self.runtimeConstants.CardWidth, runtimeConstants.AdaptiveCardHeight))
+        let superView = UIView(frame: CGRectMake(runtimeConstants.CardMarginWidth, self.runtimeConstants.CardTop, self.runtimeConstants.CardWidth, runtimeConstants.AdaptiveCardHeight))
 
-let cardView = JHSwipeView(frame: superView.bounds)
+        let cardView = JHSwipeView(frame: superView.bounds)
 
-superView.addSubview(cardView)
-self.view.addSubview(superView);
+        superView.addSubview(cardView)
+        self.view.addSubview(superView);
+    }
 }
+```
+
+* How to use JHProfileCardView
+```Swift 
+func addPersonCard()
+{
+    let superView = UIView(frame: CGRectMake(runtimeConstants.CardMarginWidth, self.runtimeConstants.CardTop, self.runtimeConstants.CardWidth, runtimeConstants.AdaptiveCardHeight))
+    personView = JHProfileCardView(frame: superView.bounds, image: UIImage(named: "mask")!)
+    personView!.swipeViewDelegate = self
+    superView.addSubview(personView!)
+    self.view.addSubview(superView);
 }
 ```
 
@@ -52,3 +66,5 @@ JHUIKit is available under the MIT license. See the LICENSE file for more info.
 
 * JHCircleImageView, show image view with a circle mask. widely used to render avatar of user.
 * JHSwipeView, base view to support tinder style swipe-able(left/right) card style view.
+* JHProfileHeaderView, header view for profile, album.
+* JHProfileCardView, tinder like profile card view. Inherited from JHSwipeView with more rich UI experience.

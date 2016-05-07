@@ -11,7 +11,7 @@ import UIKit
 public class JHSwipeView: UIView {
     
     // weak to prevent retain cycles
-    var swipeViewDelegate: JHSwipeViewDelegate?
+    public var swipeViewDelegate: JHSwipeViewDelegate?
     
     var lastLocation:CGPoint = CGPointMake(0, 0)
     var lastOriginLocation:CGPoint = CGPointMake(0, 0)
