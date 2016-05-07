@@ -24,6 +24,18 @@ public class JHProfileCardView: JHSwipeView {
         super.init(coder: aDecoder)
     }
     
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        self.initViews()
+    }
+    
+    public init(frame: CGRect, image:UIImage)
+    {
+        super.init(frame: frame)
+        self.image = image
+        self.initViews()
+    }
+    
     public init(frame: CGRect, image:UIImage, radius: CGFloat)
     {
         super.init(frame: frame)

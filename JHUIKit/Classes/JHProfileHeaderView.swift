@@ -14,6 +14,10 @@ public class JHProfileHeaderView: UIView {
     var avatar:JHCircleImageView!
     var imageLayer: CALayer!
     
+    override public init(frame: CGRect) {
+        super.init(frame:frame)
+    }
+    
     public init(frame: CGRect, radius: CGFloat) {
         self.radius = radius
         super.init(frame:frame)

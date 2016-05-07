@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "JHUIKit"
-  s.version          = "0.0.10"
+  s.version          = "0.0.11"
   s.summary          = "A UIKit Library with lots of customized View."
 
 # This description is used to generate tags and improve search results.

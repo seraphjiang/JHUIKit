@@ -20,6 +20,7 @@
 		E897972E1CDC46A5008D8547 /* JHSwipeViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897972D1CDC46A5008D8547 /* JHSwipeViewDelegate.swift */; };
 		E89797321CDC7FDE008D8547 /* JHProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89797311CDC7FDE008D8547 /* JHProfileHeaderView.swift */; };
 		E89797341CDD353C008D8547 /* JHProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89797331CDD353C008D8547 /* JHProfileCardView.swift */; };
+		E8C4C8A21CDEA4A80011AEDD /* JHBannerMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C4C8A11CDEA4A80011AEDD /* JHBannerMessage.swift */; };
 		E8ED5FA51CDC244200FF9C3D /* JHCircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8ED5FA41CDC244200FF9C3D /* JHCircleImageView.swift */; };
 		F4B0339D49955F2E830D555C9AC839DF /* Pods-JHUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B91B48E50F1CC3BA098E823B79110154 /* Pods-JHUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4D6B958D338793408D99588637276F6 /* Pods-JHUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F26EBC034FD8867E52480D4B06B61625 /* Pods-JHUIKit_Example-dummy.m */; };
@@ -76,6 +77,7 @@
 		E897972D1CDC46A5008D8547 /* JHSwipeViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHSwipeViewDelegate.swift; sourceTree = "<group>"; };
 		E89797311CDC7FDE008D8547 /* JHProfileHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProfileHeaderView.swift; sourceTree = "<group>"; };
 		E89797331CDD353C008D8547 /* JHProfileCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProfileCardView.swift; sourceTree = "<group>"; };
+		E8C4C8A11CDEA4A80011AEDD /* JHBannerMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHBannerMessage.swift; sourceTree = "<group>"; };
 		E8ED5FA41CDC244200FF9C3D /* JHCircleImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHCircleImageView.swift; sourceTree = "<group>"; };
 		F101C863E2AC0C12279D0771B10AC2B3 /* Pods_JHUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JHUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F26EBC034FD8867E52480D4B06B61625 /* Pods-JHUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JHUIKit_Example-dummy.m"; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 				E897972D1CDC46A5008D8547 /* JHSwipeViewDelegate.swift */,
 				E89797311CDC7FDE008D8547 /* JHProfileHeaderView.swift */,
 				E89797331CDD353C008D8547 /* JHProfileCardView.swift */,
+				E8C4C8A11CDEA4A80011AEDD /* JHBannerMessage.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				E89797281CDC4637008D8547 /* JHSwipeView.swift in Sources */,
 				E89797341CDD353C008D8547 /* JHProfileCardView.swift in Sources */,
 				E89797321CDC7FDE008D8547 /* JHProfileHeaderView.swift in Sources */,
+				E8C4C8A21CDEA4A80011AEDD /* JHBannerMessage.swift in Sources */,
 				E897972E1CDC46A5008D8547 /* JHSwipeViewDelegate.swift in Sources */,
 				6446FFA175D29E90D66C278B13FEA164 /* JHUIKit-dummy.m in Sources */,
 				E897972C1CDC467C008D8547 /* Constants.swift in Sources */,

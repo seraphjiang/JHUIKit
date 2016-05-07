@@ -18,6 +18,7 @@
 		E89797391CDD3A1A008D8547 /* JHSwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E89797381CDD3A1A008D8547 /* JHSwipeViewController.swift */; };
 		E897973B1CDD3A5D008D8547 /* JHProfileHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897973A1CDD3A5D008D8547 /* JHProfileHeaderViewController.swift */; };
 		E897973D1CDD3A67008D8547 /* JHProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E897973C1CDD3A67008D8547 /* JHProfileViewController.swift */; };
+		E8C4C8A41CDEAA0A0011AEDD /* JHBannerMessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8C4C8A31CDEAA0A0011AEDD /* JHBannerMessageViewController.swift */; };
 		FF9077EDC9B142F169B9111B /* Pods_JHUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38EFC2D9C52062406C54BF89 /* Pods_JHUIKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		E89797381CDD3A1A008D8547 /* JHSwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHSwipeViewController.swift; sourceTree = "<group>"; };
 		E897973A1CDD3A5D008D8547 /* JHProfileHeaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProfileHeaderViewController.swift; sourceTree = "<group>"; };
 		E897973C1CDD3A67008D8547 /* JHProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHProfileViewController.swift; sourceTree = "<group>"; };
+		E8C4C8A31CDEAA0A0011AEDD /* JHBannerMessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JHBannerMessageViewController.swift; sourceTree = "<group>"; };
 		FA931955D5419DF6AF83D6D1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -175,6 +177,7 @@
 				E89797381CDD3A1A008D8547 /* JHSwipeViewController.swift */,
 				E897973A1CDD3A5D008D8547 /* JHProfileHeaderViewController.swift */,
 				E897973C1CDD3A67008D8547 /* JHProfileViewController.swift */,
+				E8C4C8A31CDEAA0A0011AEDD /* JHBannerMessageViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8C4C8A41CDEAA0A0011AEDD /* JHBannerMessageViewController.swift in Sources */,
 				E897973D1CDD3A67008D8547 /* JHProfileViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
