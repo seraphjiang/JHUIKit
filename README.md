@@ -68,3 +68,7 @@ JHUIKit is available under the MIT license. See the LICENSE file for more info.
 * JHSwipeView, base view to support tinder style swipe-able(left/right) card style view.
 * JHProfileHeaderView, header view for profile, album.
 * JHProfileCardView, tinder like profile card view. Inherited from JHSwipeView with more rich UI experience.
+* JHBannerMessage, simple banner message box
+* JHRingView, a ring view
+* JHRateRingView, ring view + rate view
+* JHImageRateRingView, ring view + rate view + image in the center
