@@ -15,12 +15,12 @@ public class JHBannerMessage: NSObject {
                 topController = presentedViewController
             }
             
-            var alertView = UIView(frame: CGRectMake(0, -80, RuntimeConstants().ScreenWidth, 80))
+            let alertView = UIView(frame: CGRectMake(0, -80, RuntimeConstants().ScreenWidth, 80))
             alertView.backgroundColor = UIColor.darkGrayColor()
             
             //Create a label to display the message and add it to the alertView
-            var width = alertView.bounds.width
-            var theMessage = UILabel(frame: CGRectMake(20, 0, width - 40, CGRectGetHeight(alertView.bounds)));
+            let width = alertView.bounds.width
+            let theMessage = UILabel(frame: CGRectMake(20, 0, width - 40, CGRectGetHeight(alertView.bounds)));
             theMessage.numberOfLines = 0
             theMessage.lineBreakMode = .ByWordWrapping;
             
