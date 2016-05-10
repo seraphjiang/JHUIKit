@@ -6,6 +6,5 @@ end
 
 target 'JHUIKit_Tests', :exclusive => true do
   pod 'JHUIKit', :path => '../'
-
   
 end
