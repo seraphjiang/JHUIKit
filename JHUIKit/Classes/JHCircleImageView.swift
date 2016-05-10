@@ -9,15 +9,20 @@
 import UIKit
 import QuartzCore
 
+/// A Image with circle mask
 @IBDesignable
 public class JHCircleImageView: UIView {
     let lineWidth = 10.0
     var imageLayer: CALayer!
     
+        /// image property you could assign image and see effective immediately through interface builder
     @IBInspectable var image: UIImage! {
         didSet { updateLayerProperties() }
     }
     
+    /**
+     relayout layer
+     */
     public override func layoutSubviews() {
         if (imageLayer == nil) {
             let insetBounds = CGRectInset(bounds, 1, 1)
@@ -42,6 +47,9 @@ public class JHCircleImageView: UIView {
         updateLayerProperties()
     }
     
+    /**
+     update layer after content changed
+     */
     public func updateLayerProperties()
     {
         if (imageLayer != nil) {

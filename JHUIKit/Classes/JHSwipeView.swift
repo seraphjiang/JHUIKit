@@ -8,10 +8,11 @@
 
 import UIKit
 
+/// A tinder like swipe-able view
 public class JHSwipeView: UIView {
     
-    // weak to prevent retain cycles
-    public var swipeViewDelegate: JHSwipeViewDelegate?
+        /// delegate for controller to subscripe swipe gesture event
+    public var swipeViewDelegate: JHSwipeViewDelegate?  // weak to prevent retain cycles
     
     var lastLocation:CGPoint = CGPointMake(0, 0)
     var lastOriginLocation:CGPoint = CGPointMake(0, 0)
@@ -23,26 +24,38 @@ public class JHSwipeView: UIView {
     var checkImageView:UIImageView?
     var closeImageView:UIImageView?
     
+    /**
+     init view with gesture support
+     
+     - parameter frame: CGRect for size and position
+     
+     */
     override public init(frame: CGRect)
     {
         super.init(frame: frame)
         self.initView()
     }
     
+    /**
+     init will be invoked when view is init by storyboard
+     
+     - parameter aDecoder:
+     
+     */
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.initView()
     }
     
-    override public func layoutSubviews()
-    {
-    }
     
     public override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.superview?.bringSubviewToFront(self)
         lastLocation = self.center
     }
     
+    /**
+     Add nice border to view
+     */
     public func applyBorder()
     {
         // set Border outside
@@ -58,6 +71,7 @@ public class JHSwipeView: UIView {
         self.bringSubviewToFront(borderView)
     }
     
+    
     public override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let touch = touches.first! as UITouch
         
@@ -65,12 +79,19 @@ public class JHSwipeView: UIView {
         self.lastOriginLocation = touch.previousLocationInView(self.superview)
     }
     
+    /**
+     init view with gesture and backgroud
+     
+     */
     func initView() {
         self.applyGesture()
         self.backgroundColor = UIColor.whiteColor()
         self.alpha = 1
     }
     
+    /**
+     add pan gesture to support swipe
+     */
     func applyGesture()
     {
         let panRecognizer = UIPanGestureRecognizer(target:self, action:#selector(JHSwipeView.handlePan(_:)))

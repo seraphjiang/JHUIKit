@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// A nice view support ring with rate value and image with mask, refer to https://developer.apple.com/videos/play/wwdc2014/411/
 @IBDesignable
 public class JHImageRateRingView: UIView {
     var backgroundRingLayer: CAShapeLayer!

@@ -9,6 +9,12 @@
 import UIKit
 
 public class JHBannerMessage: NSObject {
+    
+    /**
+     show message box in current active viewcontroller
+     
+     - parameter message: message to be shown
+     */
     public static func show(message: String) -> Void {
         if var topController = UIApplication.sharedApplication().keyWindow?.rootViewController {
             while let presentedViewController = topController.presentedViewController {
@@ -56,13 +62,5 @@ public class JHBannerMessage: NSObject {
             })
             
         }
-    }
-    
-    
-    static func showBannerMessage()
-    {
-
-        
-  
     }
 }
