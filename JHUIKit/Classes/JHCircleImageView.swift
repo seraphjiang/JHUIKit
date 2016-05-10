@@ -15,7 +15,7 @@ public class JHCircleImageView: UIView {
     let lineWidth = 10.0
     var imageLayer: CALayer!
     
-        /// image property you could assign image and see effective immediately through interface builder
+    /// image property you could assign image and see effective immediately through interface builder
     @IBInspectable var image: UIImage! {
         didSet { updateLayerProperties() }
     }

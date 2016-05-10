@@ -11,7 +11,7 @@ import UIKit
 /// A tinder like swipe-able view
 public class JHSwipeView: UIView {
     
-        /// delegate for controller to subscripe swipe gesture event
+    /// delegate for controller to subscripe swipe gesture event
     public var swipeViewDelegate: JHSwipeViewDelegate?  // weak to prevent retain cycles
     
     var lastLocation:CGPoint = CGPointMake(0, 0)
