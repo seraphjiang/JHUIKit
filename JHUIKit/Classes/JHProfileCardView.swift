@@ -3,32 +3,46 @@
 //  Pods
 //
 //  Created by Huan Jiang on 5/6/16.
-//
-//
 
 import UIKit
 
+/// Designable profile card view
 public class JHProfileCardView: JHSwipeView {
     var blurBackground: UIImageView!
     var avatar:JHCircleImageView! = JHCircleImageView()
 
+    /// image for profile card
     @IBInspectable public var image: UIImage! {
         didSet { updateLayerProperties() }
     }
-    
+
+    /// radius for image
     @IBInspectable public var radius: CGFloat = 100 {
         didSet { updateLayerProperties() }
     }
     
+    /**
+     init for view created from storyboard
+     */
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
+    /**
+     init with frame
+     */
     override public init(frame: CGRect) {
         super.init(frame: frame)
         self.initViews()
     }
-    
+
+    /**
+     init with frame and image
+     
+     - parameter frame:	fram rect
+     - parameter image:	image for profile card
+     
+     */
     public init(frame: CGRect, image:UIImage)
     {
         super.init(frame: frame)
@@ -36,6 +50,13 @@ public class JHProfileCardView: JHSwipeView {
         self.initViews()
     }
     
+    /**
+     init with frame, image and image radius
+     
+     - parameter frame: frame rect
+     - parameter image:	image of profile
+     - parameter radius:	image radius
+     */
     public init(frame: CGRect, image:UIImage, radius: CGFloat)
     {
         super.init(frame: frame)
@@ -59,6 +80,10 @@ public class JHProfileCardView: JHSwipeView {
         addSubview(cardView)
     }
     
+    
+    /**
+     add nice border
+     */
     override public func applyBorder()
     {
         // set Border outside
@@ -76,16 +101,28 @@ public class JHProfileCardView: JHSwipeView {
         self.bringSubviewToFront(borderView)
     }
     
+    /**
+     override draw rect to adopt change of inspectable layer property
+     
+     - parameter rect:	rect
+     */
     override public func drawRect(rect: CGRect) {
         updateLayerProperties()
     }
     
+    /**
+     update layer properties
+     */
     public func updateLayerProperties()
     {
         layer.masksToBounds = true
         layer.cornerRadius = 12.0
     }
     
+    
+    /**
+    layout subviews
+     */
     public override func layoutSubviews() {
         updateLayerProperties()
     }

@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// A ring chart view
 public class JHRingChartView: UIView {
 
     public override func drawRect(rect: CGRect) {

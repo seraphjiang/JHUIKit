@@ -7,14 +7,17 @@
 //
 
 import UIKit
-// https://developer.apple.com/videos/play/wwdc2014/411/
-
+/// A simple ring view
+//https://developer.apple.com/videos/play/wwdc2014/411/
 @IBDesignable
 public class JHRingView: UIView {
     let lineWidth: CGFloat = 10.0
     var backgroundRingLayer: CAShapeLayer!
     var ringLayer: CAShapeLayer!
-    
+ 
+    /**
+     layout subviews to add ring
+     */
     override public func layoutSubviews() {
         super.layoutSubviews()
         

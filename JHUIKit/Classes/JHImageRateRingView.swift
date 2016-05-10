@@ -17,13 +17,15 @@ public class JHImageRateRingView: UIView {
     var imageLayer: CALayer!
     var imageMaskLayer: CAShapeLayer!
     
+    /// rating
     @IBInspectable
     public var rating: CGFloat = 0.6 {
         didSet {
             updateLayerProperties()
         }
     }
-    
+
+    /// line width of ring
     @IBInspectable
     public var lineWidth: CGFloat = 10.0 {
         didSet {
@@ -31,11 +33,15 @@ public class JHImageRateRingView: UIView {
         }
     }
     
+    /// image ring
     @IBInspectable
     public var image: UIImage! {
         didSet { updateLayerProperties() }
     }
-    
+
+    /**
+     layout subviews
+     */
     public override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -92,7 +98,10 @@ public class JHImageRateRingView: UIView {
         
         updateLayerProperties()
     }
-    
+
+    /**
+     update layer properties
+     */
     func updateLayerProperties() {
         if (ringLayer != nil) {
             ringLayer.strokeEnd = rating
@@ -118,25 +127,14 @@ public class JHImageRateRingView: UIView {
             }
         }
     }
-    
+
+    /**
+     only for interface builder/ won't impact runtime
+     */
     public override func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         if self.image == nil {
             self.image = UIImage(named: "mask", inBundle: NSBundle(forClass: JHImageRateRingView.self), compatibleWithTraitCollection: nil)
-        }
-        
-        //        let projectPaths = NSProcessInfo.processInfo().environment["IB_PROJECT_SOURCE_DIRECTORIES"]?.componentsSeparatedByString(",")
-        //
-        //        if projectPaths?.count > 0 {
-        ////            if let projectPath = projectPaths[0] as? String{
-        ////
-        ////            }
-        //
-        //            let projectPath = projectPaths![0]
-        //            let imagePath = projectPath.stringByAppendingString("/mask.jpg")
-        //            let i = UIImage(contentsOfFile: imagePath)
-        //            self.image = i
-        //        }
-        
+        }        
     }
 }

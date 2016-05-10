@@ -8,11 +8,13 @@
 
 import UIKit
 
+/// Designable ring view with rating
 @IBDesignable
 public class JHRateRingView: UIView {
     var backgroundRingLayer: CAShapeLayer!
     var ringLayer: CAShapeLayer!
     
+    /// rating
     @IBInspectable
     public var rating: CGFloat = 0.6 {
         didSet {
@@ -20,6 +22,7 @@ public class JHRateRingView: UIView {
         }
     }
     
+    /// line width
     @IBInspectable
     public var lineWidth: CGFloat = 10.0 {
         didSet {
@@ -27,6 +30,9 @@ public class JHRateRingView: UIView {
         }
     }
     
+    /**
+     layout subviews
+     */
     public override func layoutSubviews() {
         super.layoutSubviews()
         
@@ -42,8 +48,6 @@ public class JHRateRingView: UIView {
             backgroundRingLayer.fillColor = nil
             backgroundRingLayer.lineWidth = lineWidth
             backgroundRingLayer.strokeColor = UIColor(white: 0.5, alpha: 0.3).CGColor
-            
-            
         }
         
         backgroundRingLayer.frame = layer.bounds
@@ -67,7 +71,10 @@ public class JHRateRingView: UIView {
         
         updateLayerProperties()
     }
-    
+
+    /**
+     update layer properties
+     */
     public func updateLayerProperties() {
         if (ringLayer != nil) {
             ringLayer.strokeEnd = rating

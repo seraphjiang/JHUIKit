@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+/// Designable Profile Header View
 @IBDesignable
 public class JHProfileHeaderView: UIView {
     var blurBackground: UIImageView!
@@ -18,23 +20,41 @@ public class JHProfileHeaderView: UIView {
         super.init(frame:frame)
     }
     
+    /**
+     Init
+     
+     - parameter frame:	frame rect
+     - parameter radius: radius of image
+     
+     - returns: <#return value description#>
+     */
     public init(frame: CGRect, radius: CGFloat) {
         self.radius = radius
         super.init(frame:frame)
     }
     
+    /**
+     init for interface build
+    
+     */
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
+    
+    /// image for profile header
     @IBInspectable public var image: UIImage! {
         didSet { updateLayerProperties() }
     }
-    
+
+    /// radius for image
     @IBInspectable public var radius: CGFloat = 100 {
         didSet { updateLayerProperties() }
     }
     
+    /**
+     update layer properties
+     */
     public func updateLayerProperties()
     {
         if (blurBackground != nil) {
@@ -52,7 +72,10 @@ public class JHProfileHeaderView: UIView {
             }
         }
     }
-    
+
+    /**
+     update layer
+     */
     public override func layoutSubviews() {
 
         if self.blurBackground == nil {

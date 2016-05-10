@@ -8,11 +8,11 @@
 
 import UIKit
 
+/// A banner message
 public class JHBannerMessage: NSObject {
     
     /**
      show message box in current active viewcontroller
-     
      - parameter message: message to be shown
      */
     public static func show(message: String) -> Void {

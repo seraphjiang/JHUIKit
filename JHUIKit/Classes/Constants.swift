@@ -8,18 +8,21 @@
 
 import UIKit
 
+/// Constants
 public class Constants: NSObject {
-    static var HeadPicWidth:Double = 240.0
-    static var HeadPicHeight = 180.0
     
+    /// Card Padding
     static var CardPadding = 40.0
+    
+    /// Card Top
     static var CardTop = 50.0;
     
-    static var TotalCardPerTime = 3
-    
+    /// Card Swipe Threshold
     static var SwipeThreshold = 0.7
-    static var CardSwipedNotification = "CardSwipedNotification"
-    static var CardLikeOrDislikeNotification = "CardLikeOrDislikeNotification"
     
-    static var LabelPaddingWidth:CGFloat = 20.0    
+    /// Card Swipe Notification
+    static var CardSwipedNotification = "CardSwipedNotification"
+    
+    /// Card Like or Dislike Notification
+    static var CardLikeOrDislikeNotification = "CardLikeOrDislikeNotification"
 }
