@@ -1,6 +1,6 @@
 # JHUIKit
 
-[![CI Status](http://img.shields.io/travis/jianghuan/JHUIKit.svg?style=flat)](https://travis-ci.org/jianghuan/JHUIKit)
+[![CI Status](http://img.shields.io/travis/seraphjiang/JHUIKit.svg?style=flat)](https://travis-ci.org/seraphjiang/JHUIKit)
 [![Version](https://img.shields.io/cocoapods/v/JHUIKit.svg?style=flat)](http://cocoapods.org/pods/JHUIKit)
 [![License](https://img.shields.io/cocoapods/l/JHUIKit.svg?style=flat)](http://cocoapods.org/pods/JHUIKit)
 [![Platform](https://img.shields.io/cocoapods/p/JHUIKit.svg?style=flat)](http://cocoapods.org/pods/JHUIKit)
