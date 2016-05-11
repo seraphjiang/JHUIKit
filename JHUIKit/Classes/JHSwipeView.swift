@@ -197,6 +197,9 @@ public class JHSwipeView: UIView {
                 })
                 
             }
+            
+            self.bringSubviewToFront(self.closeImageView!)
+            self.bringSubviewToFront(self.checkImageView!)
         }
     }
     
@@ -247,11 +250,5 @@ public class JHSwipeView: UIView {
         closeImageView?.tintColor = UIColor.redColor();
         closeImageView?.alpha = 0
         self.addSubview(closeImageView!)
-    }
-    
-    func showMessage()
-    {
-        let message = UIAlertView(title: "Hello", message:"world", delegate:nil, cancelButtonTitle:"OK")
-        message.show()
     }
 }

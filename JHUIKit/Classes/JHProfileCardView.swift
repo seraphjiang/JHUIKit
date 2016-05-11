@@ -70,6 +70,8 @@ public class JHProfileCardView: JHSwipeView {
         self.alpha = 1
         self.addAllSubviews()
         self.applyBorder()
+        self.bringSubviewToFront(self.checkImageView!)
+        self.bringSubviewToFront(self.closeImageView!)
     }
     
     func addAllSubviews()
