@@ -20,9 +20,17 @@ public class JHSwipeView: UIView {
     var cardWidth :CGFloat = 382.0  // iPhone6P : cardWidth
     
     let runtimeConstants = RuntimeConstants()
-        
-    var checkImageView:UIImageView?
-    var closeImageView:UIImageView?
+    
+    @IBInspectable public var yesImage: UIImage! {
+        didSet { self.checkImageView?.image = yesImage }
+    }
+    
+    @IBInspectable public var noImage: UIImage! {
+        didSet { self.closeImageView?.image = noImage }
+    }
+    
+    public var checkImageView:UIImageView?
+    public var closeImageView:UIImageView?
     
     /**
      init view with gesture support
@@ -87,6 +95,9 @@ public class JHSwipeView: UIView {
         self.applyGesture()
         self.backgroundColor = UIColor.whiteColor()
         self.alpha = 1
+        let left = self.frame.size.width / 2
+        let top = self.frame.size.height / 2
+        addCheckAndCloseIcon(left-96, top: top - 96)
     }
     
     /**
@@ -225,16 +236,14 @@ public class JHSwipeView: UIView {
         checkImageView = UIImageView()
         checkImageView?.frame = CGRectMake(left, top, 192, 192)
         
-        let checkImage = UIImage(named: "Yes")
-        checkImageView?.image = checkImage
+        checkImageView?.image = self.yesImage ?? UIImage(named: "yes")
         checkImageView?.tintColor = UIColor.greenColor();
         checkImageView?.alpha = 0
         self.addSubview(checkImageView!)
         
         closeImageView = UIImageView()
         closeImageView?.frame = CGRectMake(left, top, 192, 192)
-        let closeImage = UIImage(named: "circle_close_delete")
-        self.closeImageView?.image = closeImage
+        self.closeImageView?.image = self.noImage ?? UIImage(named: "no")
         closeImageView?.tintColor = UIColor.redColor();
         closeImageView?.alpha = 0
         self.addSubview(closeImageView!)
