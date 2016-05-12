@@ -16,7 +16,7 @@ public class JHCircleImageView: UIView {
     var imageLayer: CALayer!
     
     /// image property you could assign image and see effective immediately through interface builder
-    @IBInspectable var image: UIImage! {
+    @IBInspectable public var image: UIImage! {
         didSet { updateLayerProperties() }
     }
     
