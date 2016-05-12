@@ -38,6 +38,13 @@ public class JHImageRateRingView: UIView {
     public var image: UIImage! {
         didSet { updateLayerProperties() }
     }
+    
+    @IBInspectable
+    public var ringColor: UIColor = UIColor.lightGrayColor() {
+        didSet {
+            updateLayerProperties()
+        }
+    }
 
     /**
      layout subviews
@@ -107,15 +114,21 @@ public class JHImageRateRingView: UIView {
             ringLayer.strokeEnd = rating
             
             var strokeColor = UIColor.lightGrayColor()
-            switch rating {
-            case let r where r >= 0.75:
-                strokeColor = UIColor(hue: 112.0/360.0, saturation: 0.39, brightness: 0.85, alpha: 1.0)
-            case let r where r >= 0.5:
-                strokeColor = UIColor(hue: 208.0/360.0, saturation: 0.51, brightness: 0.75, alpha: 1.0)
-            case let r where r >= 0.25:
-                strokeColor = UIColor(hue: 40.0/360.0, saturation: 0.39, brightness: 0.85, alpha: 1.0)
-            default:
-                strokeColor = UIColor(hue: 359.0/360.0, saturation: 0.48, brightness: 0.63, alpha: 1.0)
+            
+            if (strokeColor == self.ringColor){
+                switch rating {
+                case let r where r >= 0.75:
+                    strokeColor = UIColor(hue: 112.0/360.0, saturation: 0.39, brightness: 0.85, alpha: 1.0)
+                case let r where r >= 0.5:
+                    strokeColor = UIColor(hue: 208.0/360.0, saturation: 0.51, brightness: 0.75, alpha: 1.0)
+                case let r where r >= 0.25:
+                    strokeColor = UIColor(hue: 40.0/360.0, saturation: 0.39, brightness: 0.85, alpha: 1.0)
+                default:
+                    strokeColor = UIColor(hue: 359.0/360.0, saturation: 0.48, brightness: 0.63, alpha: 1.0)
+                }
+            }
+            else {
+                strokeColor = self.ringColor
             }
             
             ringLayer.strokeColor = strokeColor.CGColor
